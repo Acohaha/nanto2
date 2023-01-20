@@ -8,6 +8,17 @@
     <body>
       <a href="index.html"><img src="sfdf.png" style="width: 150px; height: 150px;"></a>
         <div class="container">
+        <div class="navbar">
+            <img src="sfdf.png" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">ABOUT US</a></li>
+                    <li><a href="#">CONTACT US</a></li>
+                    <li><a href="form.html" class="active">Download Form!</a></li>
+                </ul>
+            </nav>
+        </div>
             <header>Enrollment Form</header>
 
             <form action="#">
@@ -17,22 +28,22 @@
 
                         <div class="fields">
                             <div class="input-field">
-                                <label>Full Name</label>
+                                <label>*Full Name</label>
                                 <input type="text" placeholder="Enter your name" required>
                             </div>
 
                             <div class="input-field">
-                                <label>Date of Birth</label>
+                                <label>*Date of Birth</label>
                                 <input type="date" placeholder="Enter birth date" required>
                             </div>
 
                             <div class="input-field">
-                                <label>Email</label>
+                                <label>*Email</label>
                                 <input type="text" placeholder="Enter your email" required>
                             </div>
 
                             <div class="input-field">
-                                <label>Mobile Number</label>
+                                <label>*Mobile Number</label>
                                 <input type="number" placeholder="Enter mobile number" required>
                             </div>
 
@@ -42,13 +53,7 @@
                                     <option disabled selected>Select gender</option>
                                     <option>Male</option>
                                     <option>Female</option>
-                                    <option>Others</option>
                                 </select>
-                            </div>
-
-                            <div class="input-field">
-                                <label>Occupation</label>
-                                <input type="text" placeholder="Enter as a student" required>
                             </div>
                         </div>
                     </div>
@@ -59,28 +64,36 @@
                         <div class="fields">
 
                             <div class="input-field">
-                                <label>ID Number</label>
+                                <label>*LRN Number</label>
                                 <input type="number" placeholder="Enter LRN" required>
                             </div>
 
                             <div class="input-field">
-                                <label>Belonging to any Indigenous Community</label>
-                                <input type="text" placeholder="Yes or No" required>
+                                <label>*Belonging to any Indigenous Community</label>
+                                 <select required>
+                                    <option disabled selected>Yes or No</option>
+                                    <option>Yes</option>
+                                    <option>No</option>
+                                </select
                             </div>
 
                             <div class="input-field">
                                 <label>If Yes, please specify</label>
-                                <input type="text" placeholder="Enter Indigenous Community" required>
+                                <input type="text" placeholder="Enter Indigenous Community">
                             </div>
 
                             <div class="input-field">
-                                <label>Is your Family a benificiary of 4Ps?</label>
-                                <input type="text" placeholder="Yes Or No" required>
+                                <label>*Is your Family a benificiary of 4Ps?</label>
+                                <select required>
+                                    <option disabled selected>Yes or No</option>
+                                    <option>Yes</option>
+                                    <option>No</option>
+                                </select>
                             </div>
 
                             <div class="input-field">
                                 <label>If Yes</label>
-                                <input type="number" placeholder="Please write, Household ID Number" required>
+                                <input type="number" placeholder="Please write, Household ID Number">
                             </div>
                         </div>
 
@@ -142,26 +155,12 @@
                                 <label>Mother Name</label>
                                 <input type="text" placeholder="Enter mother name" required>
                             </div>
-
+                            
                             <div class="input-field">
-                                <label>Grandfather</label>
-                                <input type="text" placeholder="Enter grandfather name" required>
+                                <label>Occupations</label>
+                                <input type="text" placeholder="Enter Parents Occupation" required>
                             </div>
-
-                            <div class="input-field">
-                                <label>Grandmother</label>
-                                <input type="text" placeholder="Enter grandmother name" required>
-                            </div>
-
-                            <div class="input-field">
-                                <label>Sister</label>
-                                <input type="text" placeholder="Enter Sister name" required>
-                            </div>
-
-                            <div class="input-field">
-                                <label>Brother</label>
-                                <input type="text" placeholder="Enter Brother name" required>
-                            </div>
+                            
                         </div>
                         <div class="buttons">
                             <div class="backBtn">
