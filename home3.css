@@ -10,17 +10,24 @@
     background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(blur.jpeg);
     background-position: center;
     background-size: cover;
-    padding-left: 8%;
-    padding-right: 8%;
     box-sizing: border-box;
 }
 .navbar{
     height: 12%;
     display: flex;
     align-items: center;
+    background-color: rgba(255,255,255,0.4);
+}
+.footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(255,255,255,0.4);
+    text-align: center;
 }
 .logo{
-    width: 50px;
+    width: 80px;
     cursor: pointer;
 }
 .menu-icon{
@@ -39,14 +46,14 @@ nav ul li{
 }
 nav ul li a{
     text-decoration: none;
-    color: #fff;
+    color: black;
     font-size: 13px;
     padding: 6px 15px;
     border-radius: 20px;
 }
 nav ul li a:hover,
 nav ul li a.active{
-    background: #fff;
+    background: lightblue;
     color: #2b1055;
 }  
 .row{
@@ -123,8 +130,12 @@ h5{
     color: #fff;
     text-shadow: 0 0 5px #999;
 }
+.card{
+    opacity: 25%;
+}
 .card:hover{
-    transform: translateY(-10px);
+    opacity: 100%;
+    transition: opacity 1s;
 }
 .card .p{
     text-shadow: 0 0 15px #000;
