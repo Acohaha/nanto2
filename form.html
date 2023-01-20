@@ -1,183 +1,190 @@
+<!DOCTYPE html>
 <html lang="en">
-    <head>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="form.css">
+     
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
 
-        <link rel="stylesheet" href="form.css">
-
-        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
-    </head>
-    <body>
-        <div class="container">
+    <title>Responsive Regisration Form </title> 
+</head>
+<body>
+    <div class="container">
         <div class="navbar">
             <img src="sfdf.png" class="logo">
             <nav>
                 <ul>
-                    <li><a href="#">HOME</a></li>
-                    <li><a href="#">ABOUT US</a></li>
-                    <li><a href="#">CONTACT US</a></li>
-                    <li><a href="form.html" class="active">Download Form!</a></li>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="./form1.png" download class="active">Download Form!</a></li>
                 </ul>
             </nav>
-        </div>
-            <header>Enrollment Form</header>
+        </div>   
+        <header>Registration</header>
 
-            <form action="#">
-                <div class="form first">
-                    <div class="details personal">
-                        <span class="title">Personal Details</span>
+        <form action="#">
+            <div class="form first">
+                <div class="details personal">
+                    <span class="title">Personal Details</span>
 
-                        <div class="fields">
-                            <div class="input-field">
-                                <label>*Full Name</label>
-                                <input type="text" placeholder="Enter your name" required>
-                            </div>
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>*Full Name</label>
+                            <input type="text" placeholder="Enter your name" required>
+                        </div>
 
-                            <div class="input-field">
-                                <label>*Date of Birth</label>
-                                <input type="date" placeholder="Enter birth date" required>
-                            </div>
+                        <div class="input-field">
+                            <label>*Date of Birth</label>
+                            <input type="date" placeholder="Enter birth date" required>
+                        </div>
 
-                            <div class="input-field">
-                                <label>*Email</label>
-                                <input type="text" placeholder="Enter your email" required>
-                            </div>
+                        <div class="input-field">
+                            <label>*Email</label>
+                            <input type="email" placeholder="Enter your email" required>
+                        </div>
 
-                            <div class="input-field">
-                                <label>*Mobile Number</label>
-                                <input type="number" placeholder="Enter mobile number" required>
-                            </div>
+                        <div class="input-field">
+                            <label>*Mobile Number</label>
+                            <input type="tel" placeholder="Enter mobile number" required>
+                        </div>
 
-                            <div class="input-field">
-                                <label>*Gender</label>
-                                <select required>
-                                    <option disabled selected>Select gender</option>
-                                    <option>Male</option>
-                                    <option>Female</option>
-                                    <option>Others</option>
-                                </select>
-                            </div>
+                        <div class="input-field">
+                            <label>Gender</label>
+                            <select required>
+                                <option disabled selected>Select gender</option>
+                                <option>Male</option>
+                                <option>Female</option>
+                            </select>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="details ID">
+                    <span class="title">Identity Details</span>
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>*LRN</label>
+                            <input type="number" placeholder="Enter LRN" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>*Belonging to any Indigenous Community</label>
+                            <select >
+                                    <option disabled selected>Yes or No</option>
+                                    <option>Yes</option>
+                                    <option>No</option>
+                            </select>
+                        </div>
+
+                        <div class="input-field">
+                            <label>If Yes, please specify</label>
+                            <input type="text" placeholder="Enter Indigenous Community">
+                        </div>
+
+                        <div class="input-field">
+                            <label>*Is your Family a benificiary of 4Ps?</label>
+                            <select >
+                                    <option disabled selected>Yes or No</option>
+                                    <option>Yes</option>
+                                    <option>No</option>
+                            </select>
+                        </div>
+
+                        <div class="input-field">
+                            <label>If Yes</label>
+                            <input type="number" placeholder="Please write, Household ID Number">
                         </div>
                     </div>
 
-                    <div class="details ID">
-                        <span class="title">Identity Details</span>
+                    <button class="nextBtn">
+                        <span class="btnText">Next</span>
+                        <i class="uil uil-navigator"></i>
+                    </button>
+                </div> 
+            </div>
 
-                        <div class="fields">
+            <div class="form second">
+                <div class="details address">
+                    <span class="title">Address Details</span>
 
-                            <div class="input-field">
-                                <label>*ID Number</label>
-                                <input type="number" placeholder="Enter LRN" required>
-                            </div>
-
-                            <div class="input-field">
-                                <label>*Belonging to any Indigenous Community</label>
-                                <select required>
-                                    <option disabled selected>Yes or No</option>
-                                    <option>Yes</option>
-                                    <option>No</option>
-                                </select>
-                            </div>
-
-                            <div class="input-field">
-                                <label>If Yes, please specify</label>
-                                <input type="text" placeholder="Enter Indigenous Community">
-                            </div>
-
-                            <div class="input-field">
-                                <label>*Is your Family a benificiary of 4Ps?</label>
-                                <select required>
-                                    <option disabled selected>Yes or No</option>
-                                    <option>Yes</option>
-                                    <option>No</option>
-                                </select>
-                            </div>
-
-                            <div class="input-field">
-                                <label>If Yes</label>
-                                <input type="number" placeholder="Please write, Household ID Number">
-                            </div>
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>*House No.</label>
+                            <input type="text" placeholder="Enter House No." required>
                         </div>
 
-                        <button class="nextBtn">
-                            <span class="btnText">Next</span>
+                        <div class="input-field">
+                            <label>*Street</label>
+                            <input type="text" placeholder="Enter Street Name" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>*Municipality/City</label>
+                            <input type="text" placeholder="Enter Municipality/City" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>*Province</label>
+                            <input type="text" placeholder="Enter your province" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>*Barangay</label>
+                            <input type="text" placeholder="Enter your Barangay" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>*Zip Code</label>
+                            <input type="number" placeholder="Enter Zip Code" required>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="details family">
+                    <span class="title">Family Details</span>
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>*Father Name</label>
+                            <input type="text" placeholder="Enter father name" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>*Mother Name</label>
+                            <input type="text" placeholder="Enter mother name" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Occupation</label>
+                            <input type="text" placeholder="Enter Father's Occupation" >
+                        </div>
+
+                        <div class="input-field">
+                            <label>Occupation</label>
+                            <input type="text" placeholder="Enter Mother's Occupation" >
+                        </div>
+                    </div>
+
+                    <div class="buttons">
+                        <div class="backBtn">
+                            <i class="uil uil-navigator"></i>
+                            <span class="btnText">Back</span>
+                        </div>
+                        
+                        <button class="sumbit">
+                            <span class="btnText">Submit</span>
                             <i class="uil uil-navigator"></i>
                         </button>
-                    </div> 
-                </div>
-
-                <div class="form second">
-                    <div class="details address">
-                        <span class="title">Address Details</span>
-
-                        <div class="fields">
-                            <div class="input-field">
-                                <label>House No.</label>
-                                <input type="number" placeholder="Enter House No." required>
-                            </div>
-
-                            <div class="input-field">
-                                <label>Street</label>
-                                <input type="text" placeholder="Enter Street Name" required>
-                            </div>
-
-                            <div class="input-field">
-                                <label>Municipality/City</label>
-                                <input type="text" placeholder="Enter your Municipality/City" required>
-                            </div>
-
-                            <div class="input-field">
-                                <label>Province</label>
-                                <input type="text" placeholder="Enter your province" required>
-                            </div>
-
-                            <div class="input-field">
-                                <label>Barangay</label>
-                                <input type="text" placeholder="Enter your Barangay" required>
-                            </div>
-
-                            <div class="input-field">
-                                <label>Zip Code</label>
-                                <input type="number" placeholder="Enter Zip Code" required>
-                            </div>
-
-                        </div>
                     </div>
+                </div> 
+            </div>
+        </form>
+    </div>
 
-                    <div class="details family">
-                        <span class="title">Family Details</span>
-
-                        <div class="fields">
-                            <div class="input-field">
-                                <label>Father Name</label>
-                                <input type="text" placeholder="Enter father name" required>
-                            </div>
-
-                            <div class="input-field">
-                                <label>Mother Name</label>
-                                <input type="text" placeholder="Enter mother name" required>
-                            </div>
-                            
-                            <div class="input-field">
-                                <label>Occupations</label>
-                                <input type="text" placeholder="Enter Parents Occupation" required>
-                            </div>
-                            
-                        </div>
-                        <div class="buttons">
-                            <div class="backBtn">
-                                <i class="uil uil-navigator"></i>
-                                <span class="btnText">Back</span>
-                            </div>
-
-                            <button class="sumbit">
-                                <span class="btnText">Submit</span>
-                                <i class="uil uil-navigator"></i>
-                            </button>
-                        </div>
-                    </div> 
-                </div>
-            </form>
-        </div>
-
-        <script src="form.js"></script>
-    </body>
-    </html>
+   <script src="form.js"></script>
+</body>
+</html>
